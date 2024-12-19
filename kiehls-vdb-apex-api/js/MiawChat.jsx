@@ -216,9 +216,11 @@ const MiawChat = () => {
 						/>
 						<button onClick={sendMessage} className='send-button' disabled={sessionEnded}>
 							<FaPaperPlane />
+							<span className='tooltip'>Send message</span>
 						</button>
 						<button onClick={endSession} className='end-button' disabled={sessionEnded}>
 							<FaSignOutAlt />
+							<span className='tooltip'>End session</span>
 						</button>
 					</div>
 				</div>

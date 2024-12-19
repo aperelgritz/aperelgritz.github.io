@@ -18,6 +18,7 @@
 
 .chat-title {
 	text-align: center;
+	font-family: Arial, sans-serif;
 }
 
 .chat-window {
@@ -219,12 +220,9 @@
 
 /* Typing indicator animation */
 .typing-section .wave {
-	/* text-align: center; */
 	width: 100px;
 	height: 100px;
-	/* margin-left: auto; */
 	margin-right: auto;
-	padding: 0 0 0 5px;
 }
 
 .typing-section .wave .dot {
