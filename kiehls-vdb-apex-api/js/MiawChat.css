@@ -5,13 +5,12 @@
 	justify-content: space-between;
 	width: 100%;
 	max-width: 66%;
-	/* height: 600px; */
 	min-height: 300px;
 	margin: 20px auto;
 	border-radius: 10px;
 	font-family: Arial, sans-serif;
-	/* overflow: hidden; */
 	overflow: visible;
+	font-size: 16px;
 }
 
 .chat-title {
@@ -117,6 +116,8 @@
 }
 
 .chat-input button {
+	all: unset; /* Added for Kiehl's HTML */
+	padding-inline: 6px; /* Added for Kiehl's HTML */
 	background-color: #00a1e0;
 	color: white;
 	border: none;
