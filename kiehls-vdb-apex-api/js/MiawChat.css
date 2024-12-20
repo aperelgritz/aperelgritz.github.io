@@ -223,6 +223,7 @@
 	width: 100px;
 	height: 100px;
 	margin-right: auto;
+	padding-top: 5px;
 }
 
 .typing-section .wave .dot {
