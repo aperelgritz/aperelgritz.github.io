@@ -197,14 +197,6 @@ const MiawChat = () => {
 						</div>
 					</div>
 				)}
-				<div className='typing-section'>
-					<span className='typing-message'>Agent is typing...</span>
-					<div className='wave'>
-						<span className='dot'></span>
-						<span className='dot'></span>
-						<span className='dot'></span>
-					</div>
-				</div>
 				{sessionEnded && (
 					<div className='session-ended-message'>
 						<p>The agent session has ended.</p>
