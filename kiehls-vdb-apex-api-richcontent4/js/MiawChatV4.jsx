@@ -88,7 +88,7 @@ const MiawChatV4 = () => {
 			const response = await fetch(sseEndpoint, {
 				headers: {
 					Authorization: `Bearer ${accessToken}`,
-					Accept: 'ext/event-stream',
+					Accept: 'text/event-stream',
 					'X-Org-Id': orgId,
 				},
 			});
