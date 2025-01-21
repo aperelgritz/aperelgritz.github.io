@@ -163,7 +163,7 @@ const MiawChatV4 = () => {
 																				<div>{product.product_name}</div>
 																			</a>
 																			<p>{product.product_price}</p>
-																			<p>{product.matchReason.replace(/"/g, "'")}</p>
+																			{product.matchReason && <p>{product.matchReason.replace(/"/g, '')}</p>}
 																		</div>
 																	))}
 																</div>
