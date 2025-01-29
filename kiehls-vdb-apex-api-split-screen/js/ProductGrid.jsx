@@ -19,7 +19,7 @@ const ProductGrid = ({ pids }) => {
 						','
 					)}`,
 					{
-						mode: 'cors',
+						mode: 'no-cors',
 					}
 				);
 				if (!response.ok) {
@@ -45,7 +45,7 @@ const ProductGrid = ({ pids }) => {
 		<>
 			{products.length > 0 ? (
 				<>
-					<h2 style={{ margin: '0 auto' }}>
+					<h2 className='product-finder-number-of-products'>
 						Found <b>{products.length}</b> products
 					</h2>
 					<div className='product-finder-grid'>
