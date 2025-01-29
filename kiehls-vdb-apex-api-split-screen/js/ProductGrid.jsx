@@ -17,7 +17,10 @@ const ProductGrid = ({ pids }) => {
 				const response = await fetch(
 					`https://zzse-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-KIE-Site/default/ProductTiles-GetJson?ids=${formattedPids.join(
 						','
-					)}`
+					)}`,
+					{
+						mode: 'no-cors',
+					}
 				);
 				if (!response.ok) {
 					throw new Error('Failed to fetch products');
