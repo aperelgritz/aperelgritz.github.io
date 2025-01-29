@@ -19,7 +19,7 @@ const ProductGrid = ({ pids }) => {
 						','
 					)}`,
 					{
-						mode: 'no-cors',
+						mode: 'cors',
 					}
 				);
 				if (!response.ok) {
