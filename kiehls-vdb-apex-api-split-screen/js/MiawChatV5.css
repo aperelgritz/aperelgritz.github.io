@@ -7,6 +7,7 @@
 	min-height: 100vh;
 	height: auto;
 	overflow: visible; /* Allow the main window to handle scrolling */
+	margin-top: -70px; /* For site on github.io */
 }
 
 .product-finder__left-panel {
@@ -39,19 +40,19 @@
 	border-radius: 10px;
 	font-family: Arial, sans-serif;
 	overflow: visible;
-	font-size: 16px;
+	font-size: 16px; /* For site on github.io */
 }
 
 .chat-title {
 	text-align: center;
-	font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif; /* For site on github.io */
 }
 
 .chat-window {
 	flex-grow: 1;
 	overflow: visible; /* Remove internal scrollbar */
 	max-height: none; /* Let content expand naturally */
-	font-size: 16px;
+	font-size: 16px; /* For site on github.io */
 }
 
 /****************/
