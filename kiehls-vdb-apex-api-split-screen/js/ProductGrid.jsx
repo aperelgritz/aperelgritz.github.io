@@ -17,10 +17,7 @@ const ProductGrid = ({ pids }) => {
 				const response = await fetch(
 					`https://zzse-022.dx.commercecloud.salesforce.com/on/demandware.store/Sites-KIE-Site/default/ProductTiles-GetJson?ids=${formattedPids.join(
 						','
-					)}`,
-					{
-						mode: 'no-cors',
-					}
+					)}`
 				);
 				if (!response.ok) {
 					throw new Error('Failed to fetch products');
@@ -37,15 +34,15 @@ const ProductGrid = ({ pids }) => {
 		fetchProducts();
 	}, [pids]);
 
-	if (products.length === 0) return <h2 style={{ margin: '0 auto' }}>&#x1F448; Tell us what you need!</h2>;
-	if (loading) return <h3 style={{ margin: '0 auto' }}>Loading products...</h3>;
-	if (error) return <h3 style={{ margin: '0 auto' }}>Error: {error}</h3>;
+	if (products.length === 0) return <h2 className='product-finder-grid_title'>&#x1F448; Tell us what you need!</h2>;
+	if (loading) return <h3 className='product-finder-grid_title'>Loading products...</h3>;
+	if (error) return <h3 className='product-finder-grid_title'>Error: {error}</h3>;
 
 	return (
 		<>
 			{products.length > 0 ? (
 				<>
-					<h2 className='product-finder-number-of-products'>
+					<h2 className='product-finder-grid_title'>
 						Found <b>{products.length}</b> products
 					</h2>
 					<div className='product-finder-grid'>
