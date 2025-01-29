@@ -9,7 +9,7 @@
 	max-height: fit-content; /* Ensure the container only grows as needed */
 }
 
-.product-finder-number-of-products {
+.product-finder-grid_title {
 	margin: '0 auto';
 	font-family: Arial; /* For site on github.io */
 }
